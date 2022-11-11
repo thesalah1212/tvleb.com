@@ -1,0 +1,111 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Montserrat";
+}
+
+body {
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: color #333;
+
+}
+
+.container {
+    color: rgb(79, 39, 39);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+
+    margin-bottom: 40;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+
+}
+
+.progress-bar {
+
+
+    width: 360px;
+    height: 12px;
+    background-color: #d1d1d1;
+    margin: auto;
+    margin-bottom: 30px;
+    opacity: .8;
+    position: relative;
+}
+
+.progress-bar::before {
+
+    content: "0%";
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+    bottom: -18px;
+}
+
+.progress-bar::after {
+
+    content: "100%";
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    bottom: -18px;
+}
+
+.progress-bar span {
+
+    display: block;
+    width: 80%;
+    height: 12px;
+    background-color: #878787;
+    animation: fill 1s ease-in 1;
+}
+
+
+@keyframes fill {
+    from {
+        width: 0;
+
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+
+.sm a {
+    border-spacing: 100px;
+    margin-top: 30px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #878787;
+    line-height: 60px;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 40%;
+    margin: 0 10 px;
+    opacity: .7;
+    transition: .3s linear;
+}
+
+.sm a:hover {
+
+    transform: scale(1.1);
+    opacity: 1;
+}
